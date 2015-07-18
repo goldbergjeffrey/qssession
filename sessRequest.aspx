@@ -219,7 +219,7 @@ Jeff Goldberg				Initial Release							14-July-2015
 		
 		//Create the cookie that will be used to complete the session authentication
 		DateTime now = DateTime.Now;
-		HttpCookie MyCookie = new HttpCookie("X-Qlik-Session-sessionvp");
+		HttpCookie MyCookie = new HttpCookie("X-Qlik-Session-" + txtVp.Text);
 		MyCookie.Value = getSessionCode[1].Trim(new Char[] {'"'});
 		MyCookie.Expires = DateTime.MinValue;
 		MyCookie.HttpOnly = true;
