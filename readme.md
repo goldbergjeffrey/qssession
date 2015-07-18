@@ -20,7 +20,7 @@ From the certificates snap-in right click the installed certificate and select M
 For this code sample, the virtual proxy needs to be configured in a specific way because of variable usage.  Make sure the Prefix and the Session cookie header name are set the same way.  Put another way, the name of the prefix needs to appear at the end of the Session cookie header name where the cookie name == X-Qlik-Session-%virtualProxyPrefix%.
 
 Please use the following image as a guide.
-<img src="sessionVP.png"></img>
+<img src="SessionVP.png"></img>
 
 
 It is now possible to test the code.
